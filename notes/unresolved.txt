@@ -6,7 +6,6 @@ LinkPlayerCount | texasholdem.so
 LinkPlayerHead | texasholdem.so
 LinkPlayerList | texasholdem.so
 LinkPlayerMyPos | texasholdem.so
-SendPacket(char*) | texasholdem.so
 DevLink_Init(int) | texasholdem.so
 KeyManager::GetInstance() | texasholdem.so
 Tournamaxx::Instance() | texasholdem.so
@@ -16,7 +15,6 @@ SharedTimer::GetTick() | texasholdem.so
 SharedTimer::SetTick(unsigned long) | texasholdem.so
 SharedTimer::UnPause() | texasholdem.so
 SharedTimer::SharedTimer(Bitmap*, float, float, float, bool, unsigned char, unsigned long, int) | texasholdem.so
-HighScoresManager::LowestScore(xml_gameinfo::GameIds, int) | texasholdem.so
 KeyManager::Country() const | texasholdem.so
 KeyManager::IsNJKey() const | texasholdem.so
 ustrstr | texasholdem.so
