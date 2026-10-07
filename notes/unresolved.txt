@@ -1,0 +1,95 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkPlayerCount | texasholdem.so
+LinkPlayerHead | texasholdem.so
+LinkPlayerList | texasholdem.so
+LinkPlayerMyPos | texasholdem.so
+LinkShowDeckSetting | texasholdem.so
+FileExists(char const*) | texasholdem.so
+GetPackets(char*, int) | texasholdem.so
+SendPacket(char*) | texasholdem.so
+DevLink_Init(int) | texasholdem.so
+Debug_Flag_Set(char const*, char const*) | texasholdem.so
+Heartbeat_Check(int, int) | texasholdem.so
+Card_LinkWaitForAll(unsigned long) | texasholdem.so
+Heartbeat_WaitForAll(unsigned long, bool) | texasholdem.so
+GetMyId() | texasholdem.so
+GetMaster() | texasholdem.so
+SetMaster(unsigned char) | texasholdem.so
+KeyManager::GetInstance() | texasholdem.so
+TextSystem::LoadTranslations(xml_gameinfo::GameIds) | texasholdem.so
+Tournamaxx::Instance() | texasholdem.so
+Translator::nTranslate(char*, unsigned int, char const*) | texasholdem.so
+WorldClass::FrameCount(char const*) | texasholdem.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | texasholdem.so
+WorldClass::ShowAll() | texasholdem.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | texasholdem.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | texasholdem.so
+WorldClass::WorldClass() | texasholdem.so
+SharedTimer::Pause() | texasholdem.so
+SharedTimer::Start() | texasholdem.so
+SharedTimer::GetTick() | texasholdem.so
+SharedTimer::SetTick(unsigned long) | texasholdem.so
+SharedTimer::UnPause() | texasholdem.so
+SharedTimer::SharedTimer(Bitmap*, float, float, float, bool, unsigned char, unsigned long, int) | texasholdem.so
+ContinueControl::display() | texasholdem.so
+HighScoresManager::LowestScore(xml_gameinfo::GameIds, int) | texasholdem.so
+abstract_metadata::abstract_metadata(char const*, db_common_field_def const*, int, char const*, db_common_index_def const*, int, char const* const*, int, bool) | texasholdem.so
+abstract_xml_record::AdjustTimeFields(int, long) | texasholdem.so
+abstract_xml_record::AddChild(abstract_xml_record*, char const*, unsigned int) | texasholdem.so
+abstract_xml_record::NewChild(char*) | texasholdem.so
+abstract_xml_record::ReadFile(char const*, char const*, bool) | texasholdem.so
+abstract_xml_record::abstract_xml_record(abstract_xml_record const&) | texasholdem.so
+abstract_xml_record::abstract_xml_record() | texasholdem.so
+abstract_xml_record::~abstract_xml_record() | texasholdem.so
+List::Push(Group*) | texasholdem.so
+List::Clear(unsigned char) | texasholdem.so
+List::List(List*) | texasholdem.so
+Bitmap::DeCompress() | texasholdem.so
+Bitmap::Compress(bool, int, unsigned short*) | texasholdem.so
+Bitmap::NextAnim() | texasholdem.so
+Sprite::DoNextFrame() | texasholdem.so
+Sprite::AssignString(String*, unsigned long) | texasholdem.so
+Sprite::ChangeString(char const*, unsigned long) | texasholdem.so
+Sprite::ClicksEnabled | texasholdem.so
+Sprite::LastEventTime() | texasholdem.so
+Sprite::DeleteAfterLast(unsigned long) | texasholdem.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | texasholdem.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | texasholdem.so
+Sprite::DoDraw() | texasholdem.so
+Sprite::Enable(unsigned long) | texasholdem.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | texasholdem.so
+Sprite::SetBmp(Bitmap*, unsigned long) | texasholdem.so
+Sprite::Signal(Group::SpriteSignalType) | texasholdem.so
+Sprite::Signal(SpriteSignal*) | texasholdem.so
+Sprite::Disable(unsigned long, bool) | texasholdem.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | texasholdem.so
+Sprite::Message(Group::SpriteSignalType) | texasholdem.so
+Sprite::Message(SpriteSignal*) | texasholdem.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | texasholdem.so
+Sprite::SetCord(float, float, float, unsigned long) | texasholdem.so
+Sprite::SetSize(int, int) | texasholdem.so
+Sprite::SetAlpha(int, unsigned long) | texasholdem.so
+Sprite::DoCommand(int) | texasholdem.so
+Sprite::PlaySound(char*, int, unsigned long) | texasholdem.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | texasholdem.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | texasholdem.so
+Sprite::~Sprite() | texasholdem.so
+String::ChangeColor(int, int, int, unsigned char) | texasholdem.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | texasholdem.so
+Profiler::DelInstance() | texasholdem.so
+Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | texasholdem.so
+Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | texasholdem.so
+KeyManager::Country() const | texasholdem.so
+KeyManager::IsNJKey() const | texasholdem.so
+abstract_xml_record::ChildCount() const | texasholdem.so
+abstract_xml_record::GetChildren() const | texasholdem.so
+abstract_xml_record::ChildName(int) const | texasholdem.so
+typeinfo for abstract_record | texasholdem.so
+typeinfo for abstract_xml_record | texasholdem.so
+typeinfo for Sprite | texasholdem.so
+vtable for DOSLinuxWorld | texasholdem.so
+position_mouse | texasholdem.so
+ustrstr | texasholdem.so
